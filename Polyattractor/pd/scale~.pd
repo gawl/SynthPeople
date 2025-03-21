@@ -1,0 +1,12 @@
+#N canvas 955 370 253 226 12;
+#X obj 28 127 expr~ $v1 + \$3;
+#X obj 28 103 expr~ $v1 * (\$4 - \$3);
+#X obj 28 79 expr~ $v1 / (\$2 - \$1);
+#X obj 28 55 expr~ $v1 - \$1;
+#X obj 28 31 inlet~;
+#X obj 28 151 outlet~;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
